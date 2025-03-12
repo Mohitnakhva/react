@@ -10,6 +10,8 @@ export const Footer = () => {
                         <div className="col">
                             <h1>Company</h1>
                             <ul>
+                                <li>hello</li>
+                                <li>hii</li>
                                 <li>About</li>
                                 <li>Mission</li>
                                 <li>Services</li>
