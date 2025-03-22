@@ -12,6 +12,7 @@ export const Contact = () => {
         <div className="container-block form-wrapper">
           <p className="text-blk contactus-head">
             Get in Touch
+
           </p>
           <p className="text-blk contactus-subhead">
             Nunc erat cursus tellus gravida.
@@ -20,6 +21,7 @@ export const Contact = () => {
             <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
               <p className="text-blk input-title">
                 FIRST NAME
+                
               </p>
               <input className="input" id="ijowk" name="FirstName" placeholder="Please enter first name..."/>
             </div>

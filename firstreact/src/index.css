@@ -5,7 +5,7 @@
  }
 
  .navbar {
-   background-color: rgb(75, 66, 134);
+   background-color: rgba(39, 39, 39, 0.925);
  }
 
  .heart {
@@ -17,7 +17,7 @@
 
 
  .main {
-   background-color: rgb(105, 112, 147);
+   background-color:rgb(175, 172, 172);
    height: auto;
  }
 
@@ -35,6 +35,7 @@
  .card {
    margin: 5px;
    width: 32%;
+   
 
  }
  .card-title:hover
@@ -169,4 +170,28 @@
    .footer .col {
      width: 100%;
    }
+ }
+ .imgcart
+ {
+  object-fit: contain;
+  object-position: top;
+ }
+ .iconcart{
+  font-size: 32px;
+  margin-right: 20px;
+  color: whitesmoke;
+ }
+ .iconcart:hover
+ {
+  color: blue;
+ }
+ .parentdiv
+ {
+  position: relative;
+ }
+ .size{
+  position: absolute;
+left: 73%;
+color: red;
+bottom:50%;
  }
