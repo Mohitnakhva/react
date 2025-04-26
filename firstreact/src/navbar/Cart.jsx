@@ -16,7 +16,7 @@ export const Cart = () => {
               </div>
               <p style={{fontFamily:"initial",fontWeight:"bolder",fontSize:"24px"}}>$ {item.price}</p>
 
-            </div>
+            </div>  
             
           );
           

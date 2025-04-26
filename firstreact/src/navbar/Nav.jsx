@@ -21,7 +21,13 @@ export const Nav = ({size}) => {
               <li className="nav-item">
               <Link to={"/Aboutus"} style={{textDecoration:"none"}}><span className='nav-link  text-white'>About us</span></Link>
               </li>
-
+              <li className="nav-item">
+              <Link to={"/Database"} style={{textDecoration:"none"}}><span className='nav-link  text-white'>Database</span></Link>
+              </li>
+              <li className="nav-item">
+              <Link to={"/Login"} style={{textDecoration:"none"}}><span className='nav-link  text-white'>Login</span></Link>
+              </li>
+     
             </ul>
             <form className="d-flex" role="search" style={{ marginRight: "50px" }}>
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

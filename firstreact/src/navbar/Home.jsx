@@ -6,7 +6,7 @@ import Img3 from '../assets/image2.jpg'
 export   const Home = () => {
   const [products, setProducts] = useState([]);
  const [card,setCard]= useState(JSON.parse(localStorage.getItem("cartdata"))||[])
- const [loading,setLoading] = useState(true)
+ 
 
  function handleclick(item)
  {
@@ -30,11 +30,7 @@ useEffect(()=>{
       console.log(err);
     });
 }, []);
-
-
-
   return (
-   
     <>
 
 <div className=" main justify-content-around  p-5">

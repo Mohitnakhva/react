@@ -195,3 +195,34 @@ left: 73%;
 color: red;
 bottom:50%;
  }
+ .tr>th{
+  border: 2px solid black;
+ }
+ .tr>td{
+  border: 2px solid black;
+ }
+ .btne
+ {
+  width: 50px;
+  margin-left: px;
+ }
+ *
+{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.formm
+{
+    background-color: rgb(0, 0, 0); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(237, 237, 237, 0.756), rgba(231, 231, 231, 0.499));
+}
+.box
+{
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+.box:hover{
+border: 3px solid rgb(34, 3, 96);
+}

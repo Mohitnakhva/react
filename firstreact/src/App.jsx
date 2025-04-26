@@ -8,9 +8,12 @@ import { Cart } from './navbar/Cart'
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import { Aboutus } from './navbar/Aboutus'
+import Database from './navbar/database'
+import Login from './navbar/Login'
+import Read from './navbar/Read'
+import Edit from './navbar/Edit'
 
 function App() {
-  const [product,setProduct] = useState ([]);
     const [cartdata,setCartdata] =  useState(JSON.parse(localStorage.getItem("cartdata"))||[])
 
   
@@ -18,11 +21,16 @@ function App() {
   return (
     <>
       <Nav size={cartdata.length}/>
+      
       <Routes>
+        <Route path='/Database' element={<Database/>} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/' element={<Home />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/edit/:id' element={<Edit/>}/>
         <Route path='/Contact' element={<Contact/>} />
         <Route  path='/Aboutus' element={<Aboutus/>} />
+        <Route path='/read/:id'element={<Read/>}/>
       </Routes>
       <Footer />
     </>
