@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.566);
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color:whitesmoke;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+        }
+
+        nav a.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.feature-hero {
+  background: linear-gradient(to right, #007BFF, #00B4D8);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.feature-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #007BFF;
+}
+
+.feature-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+     <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/about">About</a>
+                <a href="/features">Features</a>
+                <a href="/contacts">Contacts</a>
+            </div>
+        </div>
+    </nav>
+  <header class="feature-hero">
+    <h1>Our Features</h1>
+    <p>Discover what makes our product stand out</p>
+  </header>
+
+  <main class="feature-container">
+    <section class="features-grid">
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Fast Performance">
+        <h3>Fast Performance</h3>
+        <p>Our solution is optimized for blazing-fast speed and seamless user experiences.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Secure">
+        <h3>Top-Notch Security</h3>
+        <p>We use the latest technologies to protect your data and ensure privacy.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Responsive Design">
+        <h3>Responsive Design</h3>
+        <p>Looks perfect on every device — from mobile phones to desktops.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828665.png" alt="User Friendly">
+        <h3>User-Friendly</h3>
+        <p>Simple, intuitive, and easy to use, even for beginners.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Customizable">
+        <h3>Fully Customizable</h3>
+        <p>Tailor everything to fit your brand and business needs.</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="24/7 Support">
+        <h3>24/7 Support</h3>
+        <p>Our team is here for you anytime you need assistance.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="feature-footer">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
