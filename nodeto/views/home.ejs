@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Express App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <h2>ExpressApp</h2>
+      <ul>
+        <li><a href="/">🏠 Home</a></li>
+        <li><a href="/about">📄 About</a></li>
+        <li><a href="/features">✨ Features</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <h1>Welcome to Your Dashboard</h1>
+      </header>
+
+      <section class="card user-card">
+        <h2>User Profile</h2>
+        <p><strong>👤 Name:</strong> <%= userData.userName %></p>
+        <p><strong>🎂 Age:</strong> <%= userData.age %></p>
+        <p><strong>🏙️ City:</strong> <%= userData.city %></p>
+      </section>
+
+      <section class="card info-card">
+        <h2>About This App</h2>
+        <p>This is a demo Express.js app using EJS templates for dynamic rendering.</p>
+        <p>It includes routes, a server, and HTML templates for each page.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
