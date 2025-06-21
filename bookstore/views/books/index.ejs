@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-12 text-center mb-5">
+    <h1 class="mb-3">📚 Book Collection</h1>
+    <a href="/books/new" class="btn btn-primary">+ Add New Book</a>
+  </div>
+</div>
+
+<div class="row">
+  <% books.forEach(book => { %>
+    <div class="col-md-4 mb-4">
+      <div class="card book-card shadow-lg border-0">
+        
+        <div class="position-relative">
+          <img src="<%= book.image %>" class="card-img-top rounded-top" alt="<%= book.title %>" style="height: 260px; object-fit: cover;">
+          <span class="badge bg-success position-absolute top-0 end-0 m-2">Stock: <%= book.stock %></span>
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title text-primary fw-semibold"><%= book.title %></h5>
+          <h6 class="card-subtitle mb-2 text-muted">by <%= book.author %></h6>
+
+          <ul class="list-unstyled card-text mt-2 mb-3">
+            <li><strong>Price:</strong> $<%= book.price.toFixed(2) %></li>
+            <li><strong>ISBN:</strong> <%= book.isbn %></li>
+          </ul>
+
+          <div class="btn-group d-flex justify-content-between">
+            <a href="/books/<%= book._id %>" class="btn btn-info btn-sm w-100 me-1">View</a>
+            <a href="/books/<%= book._id %>/edit" class="btn btn-warning btn-sm w-100 me-1">Edit</a>
+            <form action="/books/<%= book._id %>?_method=DELETE" method="POST" class="d-inline w-100">
+              <button type="submit" class="btn btn-danger btn-sm w-100" onclick="return confirm('Are you sure you want to delete this book?')">Delete</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+</div>
